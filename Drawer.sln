@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{55E88FE1-6B3F-4ED8-827E-162932DFFB6B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Drawer", "Drawer\Drawer.vcxproj", "{1888F475-438E-4F7C-9AC4-97FF626EA142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1888F475-438E-4F7C-9AC4-97FF626EA142}.Debug|x64.ActiveCfg = Debug|x64
+		{1888F475-438E-4F7C-9AC4-97FF626EA142}.Debug|x64.Build.0 = Debug|x64
+		{1888F475-438E-4F7C-9AC4-97FF626EA142}.Release|x64.ActiveCfg = Release|x64
+		{1888F475-438E-4F7C-9AC4-97FF626EA142}.Release|x64.Build.0 = Release|x64
+		{55E88FE1-6B3F-4ED8-827E-162932DFFB6B}.Debug|x64.ActiveCfg = Debug|x64
+		{55E88FE1-6B3F-4ED8-827E-162932DFFB6B}.Debug|x64.Build.0 = Debug|x64
+		{55E88FE1-6B3F-4ED8-827E-162932DFFB6B}.Release|x64.ActiveCfg = Release|x64
+		{55E88FE1-6B3F-4ED8-827E-162932DFFB6B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECFE60C9-5D97-46F5-96A9-0D36F6CB2CDD}
+	EndGlobalSection
+EndGlobal
