@@ -10,3 +10,5 @@
 	#error Drawer only supports windows!
 
 #endif // DW_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

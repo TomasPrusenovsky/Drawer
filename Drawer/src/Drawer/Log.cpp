@@ -1,3 +1,5 @@
+#include "dwpch.hpp"
+
 #include "Log.hpp"
 
 namespace Drawer

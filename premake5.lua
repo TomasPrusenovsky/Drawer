@@ -18,6 +18,9 @@ project "Drawer"
 	targetdir ("bin/"..outputdir.."/%{prj.name}")
 	objdir ("bin-int/"..outputdir.."/%{prj.name}")
 
+	pchheader "dwpch.hpp"
+	pchsource "Drawer/src/dwpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.hpp",
@@ -26,6 +29,7 @@ project "Drawer"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
