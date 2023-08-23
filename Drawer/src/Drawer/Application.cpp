@@ -9,6 +9,7 @@ namespace Drawer
 {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -18,7 +19,15 @@ namespace Drawer
 	void Application::Run()
 	{
 		WindowResizeEvent e(1280, 720);
-		DW_TRACE(e);
+		if (e.IsInCategory(EventCategoryApplication))
+			while (m_Window->IsRunning())
+			{
+				m_Window->OnUpdate();
+			}
+		if (e.IsInCategory(EventCategoryInput))
+		{
+			DW_TRACE(e);
+		}
 
 		while (true);
 	}

@@ -12,6 +12,9 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Drawer/Core.hpp"
+#include "Drawer/Log.hpp"
+
 #ifdef DW_PLATFORM_WINDOWS
 #include <Windows.h>
 #endif

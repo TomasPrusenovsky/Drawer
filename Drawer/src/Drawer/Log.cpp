@@ -1,7 +1,5 @@
 #include "dwpch.hpp"
 
-#include "Log.hpp"
-
 namespace Drawer
 {
 	std::shared_ptr<spdlog::logger> Log::s_CoreLogger;

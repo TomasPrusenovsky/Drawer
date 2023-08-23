@@ -1,9 +1,5 @@
 #pragma once
-
-#include "Drawer/Core.hpp"
-
-#include <string>
-#include <functional>
+#include "dwpch.hpp"
 
 namespace Drawer
 {

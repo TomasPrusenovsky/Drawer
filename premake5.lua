@@ -10,6 +10,15 @@ workspace "Drawer"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Drawer/vendor/GLFW/include"
+
+group "Dependencies"
+	include "Drawer/vendor/GLFW"
+
+group ""
+
 project "Drawer"
 	location "Drawer"
 	kind "SharedLib"
@@ -30,7 +39,15 @@ project "Drawer"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib",
+		"dwmapi.lib"
 	}
 
 	filter "system:windows"
